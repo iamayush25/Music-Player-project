@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="music player.css">
+
+</head>
+
+<body>
+
+    <div>
+        <div class="main">
+            <div class="header">
+                <h1 id="titleTrack">Play Now Enjoy The Music </h1>
+            </div>
+            <div class="search">
+                <label for="text"></label>
+                <input type="text" id="text">
+                <button id="btn">Search</button>
+            </div>
+            <div class="image"></div>
+            <div class="title">
+                <table>
+                    <tr>
+                        <th>
+                            <h2>Title :</h2>
+                        </th>
+                        <th>
+                            <h2 id="musictitle"></h2>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <h2>Singer :</h2>
+                        </th>
+                        <th>
+                            <h2 id="singer"></h2>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <div class="play">
+                <audio id="myaudio" controls>
+                    <source id="audiosource" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="posebtn">
+                <button id="pausebtn" onclick="playpause()"><i class="fa-solid fa-play"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="music player.js"></script>
+
+</body>
+
+</html>
